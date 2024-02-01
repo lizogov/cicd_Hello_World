@@ -1,1 +1,8 @@
-
+name: Print File Content CI/CD
+on: [push, pull_request]
+jobs: 
+  file_contents:
+    runs-on: ubuntu-latest
+    steps: 
+      -name: "Print Content"
+      run: echo "${hello_world.txt}"
